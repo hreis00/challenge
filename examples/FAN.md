@@ -20,11 +20,11 @@
 from pop import Fan
 import time
 
-dcfan = Fan(17)
+fan = Fan(17)
 
-dcfan.on()
+fan.on()
 time.sleep(3)
-dcfan.off()
+fan.off()
 ```
 
-As a result, you can see that the DC Fan is running for 3 seconds and stopped.
+As a result, you can see that the Fan is running for 3 seconds and stopped.

@@ -1,15 +1,27 @@
-## Challenge
+<a id="readme-top"></a>
 
-Inside the examples folder you have a couple files demonstrating how to use each sensor, pin and controller.
-The objective of this challenge is to complete two phases:
+# Challenge
 
-1. First, analyze all the examples to gain a comprehensive understanding of how each component works, giving you a global perspective of the system.
+<p id="demo-video">AIoT Device Manufacturer Demo:</p>
 
-2. Second, after this analysis, select and integrate two components to work together in parallel. For example, use the `GAS_SENSOR` to monitor values like ethanol, methane and propane and, if those readings fall outside the "normal" range, trigger the corresponding `SERVO_MOTOR` to automatically close the relevant valve, and then reopen it once the values return to safe levels.
+[![AIoT Home Device](https://img.youtube.com/vi/aYJOenclUvQ/0.jpg)](https://www.youtube.com/watch?v=aYJOenclUvQ)
 
-This hands-on approach will help you understand both the individual components and how they can interact in a complete AIoT system.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## How to start to code
+## Info
+
+Inside the [/examples](./examples/) folder you have a couple files demonstrating how to use each sensor, pin and controller.
+
+Check the [/docs/images/code/](./docs/images/code/)
+folder for more in-depth code examples.
+
+The [test.py](test.py) contains a partial code example, waiting for you to complete it.
+
+With that information, we challenge you to develop a full system, integrating most of the sensors and controllers, trying to replicate the <a href="#demo-video">demo by the manufacturer</a> and/or the [demo by NOSi](./docs/videos/demo.mp4).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## Starting to code
 
 First, ensure that both the AIoT device and your computer are connected to the same network. Once connected, identify the IP address assigned to the AIoT device.
 
@@ -17,15 +29,15 @@ After completing these initial steps, you have two options to connect to the dev
 
 ### Web Browser
 
-- Navigate to `192.168.40.185:8888` in your browser
+- Navigate to the IP provided by the device, using the port `8888`. For example: `192.168.40.185:8888`
 - Login with following password: `soda`
 
-This will open a JupyterLab, where you can do your experiments. The first thing to do is to create a Jupyter Notebook with the names of the components you are integrating, following the pattern: `gas_sensor_servo_motor.ipynb`.
+This will open a JupyterLab, where you can do your experiments. The first thing to do is to create a Jupyter Notebook and name it something you won't forget.
 
 ### Terminal
 
 - Open a terminal window in your machine
-- Run: `ssh soda@192.168.40.185`
+- Access the machine via SSH with the IP provided by the device. For example: `ssh soda@192.168.40.185`
 - Login with following password: `soda`
 
 After this, you'll need to navigate to where the code lives inside the AIoT device.
@@ -34,9 +46,11 @@ After this, you'll need to navigate to where the code lives inside the AIoT devi
 cd Projects/python/notebook
 ```
 
-Following the Web Browser setup, you'll now need to create a new file for the components you are integrating, following the pattern: `gas_sensor_servo_motor.py`.
+Inside this folder you'll need to create either a Python file or a Jupyter Notebook and name it something you won't forget.
 
-## How to test your code
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## Testing the code
 
 ### Web Browser
 
@@ -46,8 +60,12 @@ Following the Web Browser setup, you'll now need to create a new file for the co
 
 ### Terminal
 
-If you have connected via the terminal, you'll need to make sure you're inside the folder where the code lives, and run the following command:
+If you have connected via the terminal, you'll need to make sure you're inside the folder where the code lives `(Projects/python/notebook)`, and run the following command:
 
 ```shell
-python gas_sensor_servo_motor.py
+python <file_name>.py
 ```
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+# **Happy Coding! 😁**
